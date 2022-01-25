@@ -1,0 +1,21 @@
+.footer {
+    grid-area: footer;
+    background-color: $fondoamarillo;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    .redes {
+        height: 3vh;
+        width: 5vw;
+        transform: rotateY(30deg);
+    }
+}
+
+@media (min-width:992px) {
+    .footer {
+        height: 7.1vh;
+    }
+
+}

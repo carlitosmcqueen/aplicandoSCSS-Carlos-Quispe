@@ -1,0 +1,155 @@
+/* variables*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*Secciones*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header" "header header header header" "nav nav nav nav" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
+
+@media (min-width: 992px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header header" "header header header header" "nav nav nav nav" "main main main publicidad" "main main main publicidad" "main main main publicidad" "main main main publicidad" "main main main publicidad" "main main main publicidad" "footer footer footer footer"; } }
+
+/* utilidades*/
+.header {
+  grid-area: header;
+  background: #ff9900;
+  background: linear-gradient(180deg, #ff9900 23%, #fb0000 81%);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header .pesas {
+    padding-left: 1vw;
+    height: 20vh; }
+  .header h1 {
+    display: none; }
+
+@media (min-width: 576px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center; }
+    .header .pesas {
+      height: 20vh; }
+    .header h1 {
+      display: flex;
+      padding-left: 2vh; } }
+
+.nav {
+  grid-area: nav;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #ff9900; }
+  .nav .nav-barra {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; }
+    .nav .nav-barra .nav-item {
+      height: 8vh;
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nav .nav-barra .nav-item a {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold; }
+      .nav .nav-barra .nav-item .nav-link {
+        background-color: #ff9900;
+        height: 8vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .nav .nav-barra .nav-item .nav-link:hover {
+          background-color: #fb0000;
+          font-size: 25px; }
+      .nav .nav-barra .nav-item .nav-link-active {
+        background-color: #fb0000;
+        height: 8vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+.main {
+  grid-area: main;
+  background-color: #fb0000;
+  display: flex;
+  height: 64.9vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh; }
+  .main h2 {
+    text-align: center;
+    font-size: 35px; }
+  .main .textomain {
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    height: 40vh; }
+  .main .antesdespues {
+    display: none; }
+
+@media (min-width: 576px) {
+  .main .antesdespues {
+    display: flex;
+    border: 6px solid black;
+    border-radius: 50px;
+    width: 60vw; } }
+
+@media (min-width: 992px) {
+  .main .antesdespues {
+    display: flex;
+    border-radius: 50px;
+    height: 32vh;
+    width: 60vw; } }
+
+.publicidad {
+  display: none; }
+
+@media (min-width: 992px) {
+  .publicidad {
+    grid-area: publicidad;
+    height: 64.9vh;
+    display: flex; }
+  .bicicleta {
+    height: 100%;
+    width: 100%; } }
+
+.footer {
+  grid-area: footer;
+  background-color: #ff9900;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .redes {
+    height: 3vh;
+    width: 5vw;
+    transform: rotateY(30deg); }
+
+@media (min-width: 992px) {
+  .footer {
+    height: 7.1vh; } }

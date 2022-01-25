@@ -1,0 +1,47 @@
+.main {
+    grid-area: main;
+    background-color:$fondorojo;
+    display: flex;
+    height: 64.9vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .textomain {
+        font-family: $cursive;
+        font-size: 25px;
+       height: 40vh;
+    }
+    .antesdespues{
+        display:none;
+    }
+}
+@media (min-width:576px) {
+    .main{
+    .antesdespues{
+        display: flex;
+        border: 6px solid black;
+        border-radius: 50px;
+        width: 60vw;
+    }
+    }
+}
+@media (min-width:992px) {
+    .main{
+        .antesdespues {
+
+            display: flex;
+            border-radius: 50px;
+            height: 32vh;
+            width: 60vw;
+            
+        }
+    }
+
+}
+
+
+

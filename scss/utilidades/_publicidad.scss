@@ -1,0 +1,15 @@
+.publicidad{
+    display:none;
+}
+@media (min-width:992px) {
+    .publicidad{
+        grid-area: publicidad;
+        height: 64.9vh;
+        display:flex;
+    }
+    .bicicleta{
+        height:100%;
+        width:100%;
+    }
+}
+

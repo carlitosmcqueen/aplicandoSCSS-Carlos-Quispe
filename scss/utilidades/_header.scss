@@ -1,0 +1,34 @@
+.header {
+    grid-area: header;
+    background: $fondoamarillo;
+    background: linear-gradient(180deg, $fondoamarillo 23%, $fondorojo 81%);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pesas {
+        padding-left: 1vw;
+        height: 20vh;
+    }
+
+    h1 {
+        display: none;
+    }
+}
+
+@media (min-width:576px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        .pesas {
+            height: 20vh;
+        }
+        h1 {
+            display: flex;
+            padding-left: 2vh;
+        }
+    }
+
+}
